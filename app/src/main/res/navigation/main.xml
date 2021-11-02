@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_creatAccountFragment"
+            app:destination="@id/creatAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_posterFragment"
+            app:destination="@id/posterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creatAccountFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.login.CreatAccountFragment"
+        android:label="CreatAccountFragment"
+        tools:layout="@layout/fragment_creat_account">
+        <action
+            android:id="@+id/action_creatAccountFragment_to_posterFragment"
+            app:destination="@id/posterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.login.ForgotFragment"
+        android:label="ForgotFragment"
+        tools:layout="@layout/fragment_forgot">
+        <action
+            android:id="@+id/action_forgotFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFilmeFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.filme.ListFilmeFragment"
+        android:label="ListFilmeFragment"
+        tools:layout="@layout/fragment_list_filme"/>
+    <fragment
+        android:id="@+id/detailFilmeFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.filme.DetailFilmeFragment"
+        android:label="DetailFilmeFragment"
+        tools:layout="@layout/fragment_detail_filme"/>
+    <fragment
+        android:id="@+id/posterFragment"
+        android:name="br.iesb.mobile.filmes.ui.fragment.filme.PosterFragment"
+        android:label="PosterFragment"
+        tools:layout="@layout/fragment_poster">
+        <action
+            android:id="@+id/action_posterFragment_to_detailFilmeFragment"
+            app:destination="@id/detailFilmeFragment" />
+    </fragment>
+</navigation>

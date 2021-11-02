@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.MaterialComponents.Button.OutlinedButton.ButtonLigth">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="strokeColor">?attr/colorSecondary</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.OutlinedButton.ButtonDark">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorSecondary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.OutlinedButton.ButtonBack">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="backgroundTint">?attr/colorButtonNormal</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorSecondary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.EditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="passwordToggleTint">?attr/colorOnPrimary</item>
+        <item name="errorTextColor">?attr/colorSecondary</item>
+        <item name="boxStrokeColor">?attr/colorOnPrimary</item>
+        <item name="hintTextColor">?attr/colorOnPrimary</item>
+        <item name="boxBackgroundColor">?attr/backgroundColor</item>
+        <item name="placeholderTextColor">?attr/colorOnPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+</resources>
