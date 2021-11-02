@@ -2,7 +2,6 @@ package br.iesb.mobile.filmes.ui.fragment.filme
 
 import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import br.iesb.mobile.filmes.R
@@ -63,11 +62,6 @@ class PosterFragment : BaseFragment<FragmentPosterBinding, PosterViewModel>(),
         }
 
     override fun onCharacterClicked(binding: ItemPosterBinding, poster: Poster) {
-       /* val extras = FragmentNavigatorExtras(
-            binding.ivAvatar to "avatar_${poster.id}",
-            binding.tvName to "name_${poster.id}",
-
-        )*/
 
         var bundle = bundleOf(
             "id" to poster.id,
@@ -75,11 +69,6 @@ class PosterFragment : BaseFragment<FragmentPosterBinding, PosterViewModel>(),
         )
 
         findNavController().navigate(R.id.action_posterFragment_to_detailFilmeFragment, bundle)
-
-        /*findNavController().navigate(
-            CharactersFragmentDirections.actionCharactersToCharacterDetail(character),
-            extras
-        )*/
     }
 
 }

@@ -48,11 +48,6 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/listFilmeFragment"
-        android:name="br.iesb.mobile.filmes.ui.fragment.filme.ListFilmeFragment"
-        android:label="ListFilmeFragment"
-        tools:layout="@layout/fragment_list_filme"/>
-    <fragment
         android:id="@+id/detailFilmeFragment"
         android:name="br.iesb.mobile.filmes.ui.fragment.filme.DetailFilmeFragment"
         android:label="DetailFilmeFragment"

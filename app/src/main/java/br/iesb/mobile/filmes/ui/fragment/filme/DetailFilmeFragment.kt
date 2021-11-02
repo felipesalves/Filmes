@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import br.iesb.mobile.filmes.R
 import br.iesb.mobile.filmes.databinding.FragmentDetailFilmeBinding
-import br.iesb.mobile.filmes.databinding.FragmentListFilmeBinding
-import br.iesb.mobile.filmes.ui.adapter.FilmesAllAdapter
 import br.iesb.mobile.filmes.ui.adapter.GenresAdapter
 import br.iesb.mobile.filmes.viewmodel.ListfilmeViewModel
 import com.squareup.picasso.Picasso

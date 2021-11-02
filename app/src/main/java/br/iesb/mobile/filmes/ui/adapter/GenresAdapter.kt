@@ -6,10 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.iesb.mobile.filmes.R
 import br.iesb.mobile.filmes.databinding.FragmentItemGenresFilmeBinding
-import br.iesb.mobile.filmes.databinding.FragmentItemLancamentosFilmeBinding
-import br.iesb.mobile.filmes.domain.filmes.FilmesLancamentos
 import br.iesb.mobile.filmes.domain.filmes.Genres
-import com.squareup.picasso.Picasso
+
 
 class GenresAdapter(
         private val genres: List<Genres>,
